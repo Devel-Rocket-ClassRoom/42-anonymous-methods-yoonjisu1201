@@ -35,5 +35,17 @@ Console.WriteLine($"최종 카운터: {counter}");
 */
 
 //5.
+int counter = 0;
 
+Action increment = delegate
+{
+    counter++;
+    Console.WriteLine($"현재 카운터: {counter}");
+};
+
+increment();
+increment();
+increment();
+
+Console.WriteLine($"최종 카운터: {counter}");
 
