@@ -33,7 +33,8 @@
 
 ## 3. 캡처된 변수의 변경
 
-`int factor = 2`를 선언하고, `Func<int, int> multiplier`에 `delegate (int n) { return n * factor; }` 익명 메서드를 할당하세요. `"factor = 2일 때: {multiplier(5)}"`를 출력한 후, `factor`를 10으로 변경하고 `"factor = 10일 때: {multiplier(5)}"`를 출력하세요.
+`int factor = 2`를 선언하고, `Func<int, int> multiplier`에 `delegate (int n) { return n * factor; }` 익명 메서드를 할당하세요. `"factor = 2일 때: 
+{multiplier(5)}"`를 출력한 후, `factor`를 10으로 변경하고 `"factor = 10일 때: {multiplier(5)}"`를 출력하세요.
 
 **실행 결과**
 
@@ -46,7 +47,8 @@ factor = 10일 때: 50
 
 ## 4. 익명 메서드 내부에서 외부 변수 수정
 
-`int counter = 0`을 선언하고, `Action increment`에 매개변수를 생략한 익명 메서드를 할당하세요. 이 메서드는 `counter++` 후 `"현재 카운터: {counter}"`를 출력합니다. `increment()`를 3번 호출한 후 `"최종 카운터: {counter}"`를 출력하세요.
+`int counter = 0`을 선언하고, `Action increment`에 매개변수를 생략한 익명 메서드를 할당하세요. 이 메서드는 `counter++` 후 `"현재 카운터: {counter}"`를 출력합니다. 
+`increment()`를 3번 호출한 후 `"최종 카운터: {counter}"`를 출력하세요.
 
 **실행 결과**
 
